@@ -1,0 +1,218 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    font-family: "Montserrat", sans-serif;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    
+}
+
+header h2 {
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    /* margin-left: auto; */
+    margin-right: 40px;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    /* border: 2px solid rgb(249, 5, 5); */
+}
+
+header ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:#3493a5;
+}
+
+/* header h4 {
+    font-size: 1.5rem;
+} */
+
+@media only screen and (max-width: 500px) { 
+    header {
+        flex-direction: column;
+        /* height: 100px; */
+        
+        
+    }
+    header h2 {
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+    header ul {
+        margin: 0 0 2rem;
+    }
+
+}
+
+.logo {
+    height: 80%;
+    /* overflow: hidden; */
+    opacity: .9;
+    margin-left: 2.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+
+}
+
+@media only screen and (max-width: 500px) { 
+    .logo {
+        display: none;
+    }
+}
+
+.banner {
+    height: 800px;
+    margin: 2rem 0 0;
+    background-image: url(./ressources/images/board-game-with-city-background_899894-22717.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 550px;
+    margin-right: 5rem;
+    /* border: 2px solid red; */
+}
+
+.box-registration {
+    background-color: rgba(79, 201, 228, 0.5);
+    padding: 1.5rem 2rem 2.5rem;
+    margin: 0;
+    border-radius: 1rem;
+    width: 350px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-registration h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.box-registration h4 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: rgb(63, 63, 63);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) { 
+    .box-container {
+        margin-right: 1em;
+
+    }
+    .box-registration {
+        width: 60%;
+    }
+    .box-registration h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .box-registration h4 {
+        font-size: 1rem;
+    }
+}
+
+
+.banner button {
+    background-color: white;
+    margin-left: 50%;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #3493a5;
+    border: none;
+}
+
+@media only screen and (max-width: 500px) { 
+    .banner button {
+        margin-left: 30%;
+    }
+}
+
+.banner button:hover {
+    background-color: #3493a5;
+    color: white;
+    cursor: pointer;
+}
+
+/* -- games section -- */
+
+.games h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #3493a5;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    gap: 1rem;
+}
+
+.game {
+    flex-basis: 300px;
+    /* width: 300px; */
+}
+ .game img {
+    width: 100%;
+ }
+
+
+ footer {
+    background-color: #3493a5;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+ }
